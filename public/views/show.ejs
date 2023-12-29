@@ -1,0 +1,110 @@
+<!-- <head>
+    <div class="banner">
+        <img class="banner-img" src="/images/Su15_RN_Vomero_W_Hero_Tight_hd_1600.jpeg">
+      </div>
+
+</head> -->
+<!-- <div class="heading">My Collection</div> -->
+<div class="show-body">
+  <div class="show-wrapper">
+    <div class="show-card">
+      <!-- card left -->
+      <div class="product-imgs">
+        <div class="img-display">
+          <div class="img-showcase">
+            <img src="<%= sneaker.img%>" alt="shoe image" class="show-img" />
+          </div>
+        </div>
+        <div class="img-select">
+          <% if (!!sneaker.imgL) { %>
+            <div class="img-item">
+              <a href="<%= sneaker.lnk1%>" target="_blank" data-id="1">
+                <img
+                  class="show-img"
+                  src="<%= sneaker.imgL %>"
+                  alt="shoe image"
+                />
+              </a>
+            </div>
+          <% } %>
+          <% if (!!sneaker.imgCL) { %>
+            <div class="img-item">
+              <a href="<%= sneaker.lnk2%>" target="_blank" data-id="2">
+                <img
+                  class="show-img"
+                  src="<%= sneaker.imgCL %>"
+                  alt="shoe image"
+                />
+              </a>
+            </div>
+          <% } %>
+          <% if (!!sneaker.imgCR) { %>
+            <div class="img-item">
+              <a href="<%= sneaker.lnk3%>" target="_blank" data-id="3">
+                <img
+                  class="show-img"
+                  src="<%= sneaker.imgCR %>"
+                  alt="shoe image"
+                />
+              </a>
+            </div>
+            <% } %>
+            <% if (!!sneaker.imgR) { %>
+              <div class="img-item">
+                <a href="<%= sneaker.lnk4%>" target="_blank" data-id="4">
+                  <img
+                    class="show-img"
+                    src="<%= sneaker.imgR %>"
+                    alt="shoe image"
+                  />
+                </a>
+              </div>
+              <% } %>
+        </div>
+      </div>
+      <!-- card right -->
+      <div class="sneaker-content">
+        <h1
+          style="font-family: 'Permanent Marker', cursive"
+          class="sneaker-brand"
+        >
+          <%= sneaker.brand %>
+        </h1>
+        <h2 class="sneaker-name"><%= sneaker.name %></h2>
+
+        <div class="sneaker-detail">
+          <h2 style="font-family: 'Permanent Marker', cursive">
+            ABOUT THIS SNEAKER:
+          </h2>
+          <p><%= sneaker.colorWay %></p>
+          <p><%= sneaker.size%></p>
+          <p><%= sneaker.condition%></p>
+
+          <% if (sneaker.worn > 0) { %>
+          <p>worn: <%= sneaker.worn %></p>
+          <form
+            action="/sneaker/<%= sneaker.id %>/show?_method=PUT"
+            method="POST"
+          ></form>
+          <% } else { %>
+          <p>need to wear</p>
+          <% } %>
+        </div>
+        <div class="button-container">
+          <a href="/sneaker/<%= sneaker.id %>/edit" class="sneaker-link"
+            >Edit Sneaker</a
+            >
+            <div class="delete-sneaker">
+              <form
+              style="text-align: left"
+              action="/sneaker/<%=sneaker.id%>?_method=DELETE"
+              method="POST"
+              >
+              <input class="delete" type="submit" value="DELETE" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

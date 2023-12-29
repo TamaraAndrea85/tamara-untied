@@ -1,0 +1,154 @@
+<section class="form-container">
+  <div class="edit-card">
+    <div class="form-title">
+      <h2>Edit Sneaker</h2>
+      <img class="form-image" src="<%= sneaker.img %>" alt="edit sneaker img">
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <form action="/sneaker/<%=sneaker.id %>?_method=PUT" method="POST">
+            <label for="name">Name</label>
+            <input class="edit-input" type="text" name='brand' id='brand' value='<%= sneaker.brand %>'>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input class="edit-input" type="text" name='name' id='name' value='<%= sneaker.name %>'>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="img">Image Link</label>
+          <input class="edit-input" type="text" name='img' id='img' value='<%= sneaker.img %>'>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="img">Image Link L</label>
+          <input class="edit-input" type="text" name='imgL' id='imgL' value='<%= sneaker.imgL %>'>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="imgCL">Image Link CL</label>
+          <input class="edit-input" type="text" name='imgCL' id='imgCL' value='<%= sneaker.imgCL %>'>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="img">Image Link CR</label>
+          <input class="edit-input" type="text" name='imgCR' id='imgCR' value='<%= sneaker.imgCR %>'>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="img">Image Link R</label>
+          <input class="edit-input" type="text" name='imgR' id='imgR' value='<%= sneaker.imgR %>'>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="colorWay">ColorWay</label>
+          <input class="edit-input" type="text" name='colorWay' id='colorWay' value='<%= sneaker.colorWay %>'>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="condition">Condition</label>
+          <input class="edit-input" type="text" name='condition' id='condition' value='<%= sneaker.condition %>'>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="size">Size</label>
+          <input class="edit-input" type="text" name='size' id='size' value='<%= sneaker.size %>'>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label for="worn">#Worn</label>
+          <input class="edit-input" type="text" name='worn' id='worn' value='<%= sneaker.worn %>'>
+        </div>
+      </div>
+      <div class="col">
+        <input type="submit" value='Edit Sneaker' class="edit-input">
+      </div>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="background"></div>
+<div class="edit-div">
+<div class="edit-card">
+    
+    <h2>Edit Sneaker</h2>
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <form action="/sneaker/<%=sneaker.id %>?_method=PUT" method="POST">
+            
+                <label>Name</label>
+                <input class="edit-input"  type="text" value='<%= sneaker.name %>'>
+        </div>
+    </div>
+  
+    <div class="col">
+        <div class="form-group">
+          <label>Brand</label>
+          <input class="edit-input" type="text"value='<%= sneaker.brand %>'>
+        </div>
+    </div>
+  
+      <div class="col">
+        <div class="form-group">
+          <label>ColorWay</label>
+          <input class="edit-input" type="text"value='<%= sneaker.colorWay %>'>
+        </div>
+    </div>
+    <div class="col">
+        <div class="form-group">
+          <label>Image</label>
+          <input class="edit-input" type="text"value='<%= sneaker.img %>'>
+        </div>
+    </div>
+  
+      <div class="col">
+        <div class="form-group">
+          <label>Size</label>
+          <input class="edit-input" type="text"value='<%= sneaker.size %>'>
+        </div>
+    </div>
+  
+      <div class="col">
+        <div class="form-group">
+          <label>worn</label>
+          <input class="edit-input" type="text"value='<%= sneaker.worn %>'>
+        </div>
+      </div>
+      
+  
+      <div class="col">
+        <input type="submit" value='Edit Sneaker'class="edit-input">
+      </form>
+    
+      </div>
+    </div>
+</div>
+
+    
+
+
+ -->

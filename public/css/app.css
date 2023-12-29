@@ -1,0 +1,700 @@
+/* layouts */
+/* nav bar */
+.nav {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  list-style: none;
+  text-align: right;
+  padding: 70px 0 0 0;
+  /* display: block; */
+}
+.nav li {
+  display: inline-block;
+  padding: 0 25px 0 25px;
+}
+.nav li a {
+  text-decoration: none;
+  color: #110510;
+  font-size: 40px;
+  font-family: "Permanent Marker", cursive;
+  font-weight: bolder;
+}
+.nav li a:hover {
+  color: #bcb0bc;
+}
+.logo {
+  color: #2b2934;
+  float: left;
+  padding-left: 55px;
+  font-size: 40px;
+}
+.logo a {
+  text-decoration: none;
+  color: black;
+  font-family: "Permanent Marker", cursive;
+  font-weight: bold;
+}
+.logo a:hover {
+  color: #bcb0bc;
+}
+
+/* banner */
+.home-banner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  height: -webkit-fill-available;
+  background: no-repeat
+    url(https://res.cloudinary.com/dsruc2myl/image/upload/c_scale,h_450,w_800/v1682192446/excz9iqriboa6e21qmin.jpg);
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: 20vw;
+  overflow: auto;
+}
+.banner {
+  width: 100%;
+  height: 100dvh;
+  display: block;
+  margin-top: 65px;
+}
+/* .banner .banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+} */
+
+/* home hero section */
+
+.hero-section {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(68, 16, 64, 0.5)),
+    url(https://res.cloudinary.com/dsruc2myl/image/upload/c_scale,h_450,w_800/v1682192446/excz9iqriboa6e21qmin.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.hero-text {
+  color: white;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 50px;
+  color: #d4ddef;
+}
+
+.hero-text p {
+  font-size: 20px;
+  font-family: "Permanent Marker", cursive;
+  color: #d4ddef;
+}
+
+.button-link {
+  margin-top: 20px;
+  font-size: 20px;
+  background-color: #d4ddef;
+  padding: 10px 20px;
+  min-width: 300px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.button-link a {
+  font-family: "Permanent Marker", cursive;
+  color: black;
+  text-decoration: none;
+}
+
+/* index */
+.index-wrapper {
+  width: 100%;
+  padding: 0 2rem;
+  text-align: center;
+}
+.sneaker-polaroid {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+}
+.sneaker-polaroid > img {
+  max-width: 100%;
+  height: auto;
+}
+.sneaker a {
+  text-decoration: none;
+}
+
+#name {
+  font-family: "Architects Daughter", cursive;
+  color: #685267;
+  font-size: 30px;
+}
+
+.name {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2em;
+  text-decoration: none;
+}
+.sneaker {
+  width: 30%;
+  display: inline-block;
+  margin-top: 2rem;
+  filter: grayscale(100%);
+}
+.sneaker.sneaker-polaroid:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.35s;
+}
+.sneaker:nth-of-type(4n + 1) {
+  transform: scale(0.8, 0.8) rotate(5deg);
+  transition: all 0.35s;
+}
+.sneaker:nth-of-type(4n + 1) .polaroid:before {
+  transform: rotate(6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
+}
+.sneaker:nth-of-type(4n + 2) {
+  transform: scale(0.8, 0.8) rotate(-5deg);
+  transition: all 0.35s;
+}
+.sneaker:nth-of-type(4n + 2) .sneaker-polaroid:before {
+  transform: rotate(-6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
+}
+.sneaker:nth-of-type(4n + 4) {
+  transform: scale(0.8, 0.8) rotate(3deg);
+  transition: all 0.35s;
+}
+.sneaker:nth-of-type(4n + 4) .sneaker-polaroid:before {
+  transform: rotate(4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.3);
+}
+.sneaker:nth-of-type(4n + 3) {
+  transform: scale(0.8, 0.8) rotate(-3deg);
+  transition: all 0.35s;
+}
+.sneaker:nth-of-type(4n + 3) .sneaker-polaroid:before {
+  transform: rotate(-4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.3);
+}
+.sneaker:hover {
+  filter: none;
+  transform: scale(1, 1) rotate(0deg) !important;
+  transition: all 0.35s;
+}
+.sneaker:hover .sneaker-polaroid:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transform: rotate(0deg);
+  height: 90%;
+  width: 90%;
+  bottom: 0%;
+  right: 5%;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  transition: all 0.35s;
+}
+
+/* edit */
+/* .background {
+  background-image: url("/images/Nike_Air_Max_2015_womens1_native_1600.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  padding: 95em;
+  opacity: 0.35;
+  position: absolute;
+} */
+/* html, */
+.edit-div {
+  /* height: 100vh; */
+  font-family: "Permanent Marker", cursive;
+  align-items: center;
+}
+
+.edit-div {
+  font-family: "Permanent Marker", cursive;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.edit-card {
+  font-family: "Permanent Marker", cursive;
+  width: min(1000px, 80%);
+  padding: 20px;
+  border: 6px solid rgba(68, 16, 64, 0.3);
+  box-shadow: 20px 20px 0 rgba(68, 16, 64, 0.5);
+  border-radius: 50px;
+  margin-bottom: 40px;
+  /* position: absolute;
+  bottom: 30%;
+  left: 25%;
+  display: block; */
+}
+
+.edit-card h2 {
+  font-family: "Permanent Marker", cursive;
+  color: rgba(68, 16, 64, 1);
+  font-size: 50px;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+.edit-card .row {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid: auto / auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  grid-gap: 30px;
+}
+
+.edit-card .row .col {
+  position: relative;
+  width: 100%;
+  margin: 30px 20px 40px 0;
+  transition: 0.5s;
+}
+
+.edit-card .row .form-group {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #ffffff;
+}
+
+.edit-card .row .form-group .edit-input,
+.card .row .form-group {
+  position: absolute;
+  width: 90%;
+  /* height: 100%; */
+  background: transparent;
+  outline: none;
+  font-size: 24px;
+  padding: 10px 0 10px 20px;
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+  color: #140116;
+  border-radius: 50px;
+  font-family: "Indie Flower", cursive;
+}
+
+.edit-card .row .form-group label {
+  line-height: 40px;
+  color: #2e2159;
+  font-size: 24px;
+  margin: 0 0 0 30px;
+  display: block;
+  pointer-events: none;
+  font-family: "Architects Daughter", cursive;
+}
+
+.row .col:nth-child(6) {
+  margin-top: 64px;
+}
+
+.edit-card .row .form-group .edit-input:focus,
+.edit-card .row .form-group {
+  /* border: 5px solid #ffffff; */
+  transition: all 0.5s;
+}
+
+.edit-card .row .edit-input[type="submit"] {
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  height: 100%;
+  width: 70%;
+  cursor: pointer;
+  outline: none;
+  background: transparent;
+  text-transform: uppercase;
+  color: rgba(68, 16, 64, 0.8);
+  line-height: 40px;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 45px;
+  transition: all 0.4s;
+  font-family: "Architects Daughter", cursive;
+  margin-top: 10px;
+}
+
+.edit-card .row .edit-input[type="submit"]:hover {
+  border: 5px solid rgba(255, 255, 255, 1);
+  background-color: rgba(68, 16, 64, 0.8);
+  color: white;
+  transition: all 0.4s;
+}
+
+@media screen and (max-width: 900px) {
+  .edit-card .row {
+    grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));
+  }
+
+  .edit-card {
+    padding: 20px;
+  }
+
+  .edit-card h2 {
+    font-size: 34px;
+  }
+
+  .edit-card .row .edit-input[type="submit"] {
+    width: 100%;
+  }
+}
+
+/* new */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+
+/* html, */
+.form-container {
+  font-family: "Permanent Marker", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  width: 100vw;
+}
+.form-image {
+width: 200px;
+height: 150px;
+object-fit: contain;
+border-radius: 100%;
+opacity: 0.7;
+}
+
+.form-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new-div {
+  font-family: "Permanent Marker", cursive;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.new-card {
+  font-family: "Permanent Marker", cursive;
+  width: min(1000px, 80%);
+  padding:20px;
+  border: 6px solid rgba(122, 122, 123, 0.3);
+  box-shadow: 20px 20px 0 #212020;
+  border-radius: 50px;
+  margin-bottom: 40px;
+  /* position: absolute; */
+  /* bottom: 30%;
+  left: 25%; */
+  /* display: block; */
+}
+
+.new-card h2 {
+  font-family: "Permanent Marker", cursive;
+  color: rgba(122, 122, 123, 0.95);
+  font-size: 50px;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.new-card .row1 {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid: auto / auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  grid-gap: 30px;
+}
+
+.new-card .row1 .col1 {
+  position: relative;
+  width: 100%;
+  margin: 30px 20px 40px 0;
+  transition: 0.5s;
+}
+
+.new-card .row1 .form-group1 {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #ffffff;
+}
+
+.new-card .row1 .form-group1 .new-input,
+.card .row1 .form-group1 {
+  position: absolute;
+  width: 90%;
+  /* height: 100%; */
+  background: transparent;
+  outline: none;
+  font-size: 24px;
+  padding: 10px 0 10px 20px;
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+  color: #140116;
+  border-radius: 50px;
+  font-family: "Indie Flower", cursive;
+}
+
+.new-card .row1 .form-group1 label {
+  line-height: 40px;
+  color: #2f2f30;
+  font-size: 24px;
+  margin: 0 0 0 30px;
+  display: block;
+  pointer-events: none;
+}
+
+.new-row .col1:nth-child(6) {
+  margin-top: 64px;
+}
+.new-card .row1 .form-group1 .new-input:focus,
+.new-card .row1 .form-group1 {
+  /* border: 5px solid #ffffff; */
+  transition: all 0.5s;
+}
+
+.new-card .row1 .new-input[type="submit"] {
+  font-family: "Architects Daughter", cursive;
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  height: 100%;
+  width: 70%;
+  cursor: pointer;
+  outline: none;
+  background: transparent;
+  text-transform: uppercase;
+  color: rgba(68, 16, 64, 0.8);
+  line-height: 40px;
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 45px;
+  transition: all 0.4s;
+  margin-top: 10px;
+}
+
+.new-card .row1 .new-input[type="submit"]:hover {
+  border: 5px solid rgba(255, 255, 255, 1);
+  background-color: rgba(68, 16, 64, 0.8);
+  color: white;
+  transition: all 0.4s;
+}
+
+@media screen and (max-width: 900px) {
+  .new-card .row1 {
+    grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));
+  }
+
+  .new-card {
+    padding: 20px;
+  }
+
+  .new-card h2 {
+    font-size: 34px;
+  }
+
+  .new-card .row1 .new-input[type="submit"] {
+    width: 100%;
+  }
+}
+/* Show-Page */
+.show-body {
+  line-height: 1.5;
+}
+.show-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.show-img {
+  width: 100%;
+  display: flex;
+}
+.img-display {
+  overflow: hidden;
+}
+.img-showcase {
+  display: flex;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.img-showcase img {
+  min-width: 100%;
+}
+.img-select {
+  display: flex;
+}
+.img-item {
+  margin: 0.3rem;
+}
+
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3) {
+  margin-right: 0;
+}
+.img-item:hover {
+  opacity: 0.8;
+}
+
+.sneaker-content {
+  padding: 2rem 1rem;
+  color: #4b4a54;
+}
+.sneaker-content h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 40px;
+}
+.sneaker-content h2 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 30px;
+}
+.sneaker-name {
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  position: relative;
+  color: #1b0f33;
+  margin: 1rem 0;
+  font-family: "Permanent Marker", cursive;
+}
+
+.sneaker-name::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 80px;
+  background: #1b0f33;
+}
+
+.sneaker-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 30px;
+  display: inline-block;
+  background-color: #d4ddef;
+  margin: 0.5rem 0;
+  color: #1b0f33;
+  padding: 10px 20px;
+  transition: all 0.5s ease;
+  font-family: "Architects Daughter", cursive;
+  border-radius: 6px;
+}
+.sneaker-link:hover {
+  opacity: 0.5;
+  transform: scale(1.06);
+  color: #2e2159;
+}
+
+.sneaker-name {
+  /* text-transform: capitalize; */
+  color: #2e2159;
+  padding-bottom: 20px;
+  font-size: 80px;
+  font-family: "Architects Daughter", cursive;
+}
+
+.sneaker-detail p {
+  font-size: 30px;
+  padding: 0.3rem;
+  opacity: 0.8;
+  font-family: "Architects Daughter", cursive;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  gap: 20px
+}
+
+.delete-sneaker {
+  margin: 1rem 0;
+}
+.delete {
+  border: none;
+  font-size: 20px;
+  background-color: rgba(68, 16, 64);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Architects Daughter", cursive;
+}
+.delete:hover {
+  opacity: 0.5;
+  transform: scale(1.06);
+}
+@media screen and (min-width: 767px) {
+  .show-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+  }
+  .show-wrapper {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 75%;
+    height: 100%;
+  }
+  .product-imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sneaker-content {
+    padding-top: 55px;
+  }
+}
